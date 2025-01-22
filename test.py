@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import cv2
 
-model = YOLO('yolo8s.pt')
+model = YOLO("yolov8s.pt")
 
 img = cv2.imread('test.jpg')
 results = model(img)[0]
